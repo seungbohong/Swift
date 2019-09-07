@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zrB-HB-Dci">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vZ1-OD-XKF">
+            <objects>
+                <viewController id="628-LJ-MHy" customClass="ViewController" customModule="_____________" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8l-vX-VT5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azb-Th-cbC">
+                                <rect key="frame" x="62" y="466" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6tD-tK-mrc">
+                                <rect key="frame" x="62" y="406" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfe-sB-Ucy">
+                                <rect key="frame" x="62" y="540" width="290" height="35"/>
+                                <color key="backgroundColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.044461905849999997" green="0.031764907850000003" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginButton:" destination="628-LJ-MHy" eventType="touchUpInside" id="DXr-Bi-uQo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모두의 주차장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7e-Sf-ads">
+                                <rect key="frame" x="77.5" y="211.5" width="259" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="96C-eP-6TL">
+                                <rect key="frame" x="20" y="308" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="Oyy-SQ-T8m"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="ac4-3t-AZq"/>
+                                    <constraint firstAttribute="height" constant="40" id="qt7-96-Hng"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="uzQ-Xd-eIo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="yA1-pa-T8W"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="일반 사용자"/>
+                                    <segment title="차량 소유자"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="top" secondItem="f8l-vX-VT5" secondAttribute="top" constant="308" id="JYY-rG-nuf"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="centerX" secondItem="o7e-Sf-ads" secondAttribute="centerX" id="KR2-5O-otT"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="trailing" secondItem="f8l-vX-VT5" secondAttribute="trailingMargin" id="UBU-KO-rdH"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="centerX" secondItem="wfe-sB-Ucy" secondAttribute="centerX" id="Usi-Wo-WGP"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="centerX" secondItem="azb-Th-cbC" secondAttribute="centerX" id="dw3-C5-zGg"/>
+                            <constraint firstItem="6tD-tK-mrc" firstAttribute="top" secondItem="96C-eP-6TL" secondAttribute="bottom" constant="70" id="fii-gY-zMz"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="top" secondItem="o7e-Sf-ads" secondAttribute="bottom" constant="39" id="fwG-aG-hea"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="centerX" secondItem="6tD-tK-mrc" secondAttribute="centerX" id="oeb-eB-cGh"/>
+                            <constraint firstItem="96C-eP-6TL" firstAttribute="leading" secondItem="f8l-vX-VT5" secondAttribute="leadingMargin" id="yJp-rc-LEW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vUW-sP-9DL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Sm-tM-PyN"/>
+                    <connections>
+                        <outlet property="_login_button" destination="wfe-sB-Ucy" id="hYo-Mi-eOA"/>
+                        <outlet property="_password" destination="azb-Th-cbC" id="mV7-zM-vcl"/>
+                        <outlet property="_username" destination="6tD-tK-mrc" id="dYo-kW-QMA"/>
+                        <outlet property="loginButton" destination="wfe-sB-Ucy" id="eFH-C1-RQg"/>
+                        <outlet property="password" destination="azb-Th-cbC" id="F34-Aw-nJZ"/>
+                        <outlet property="username" destination="6tD-tK-mrc" id="K9m-MG-mSD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jE9-sx-w9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ys6-BN-qoF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zrB-HB-Dci" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1TF-wp-hLE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="628-LJ-MHy" kind="relationship" relationship="rootViewController" id="JJf-dK-HE6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VvM-10-QZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
